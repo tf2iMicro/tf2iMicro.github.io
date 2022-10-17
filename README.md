@@ -1,2 +1,1 @@
-# tf2iMicro.github.io
-Website
+(Click me to open pages)[https://tf2imicro.github.io/]
