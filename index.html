@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>iMicro's Mancave</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
@@ -14,6 +15,22 @@
             >Login with Discord</a
         ><br /><br />
         <p id="welcome_txt"></p>
+        <a href="#" class="button"><span></span>Button</a>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(e){
+            $('.button').on('mouseenter', function(e){
+                x = e.pageX - $(this).offset().left;
+                y = e.pageY - $(this).offset().top;
+                $(this).find('span').css({top:y, left:x})
+            })
+            $('.button').on('mouseout', function(e){
+                x = e.pageX - $(this).offset().left;
+                y = e.pageY - $(this).offset().top;
+                $(this).find('span').css({top:y, left:x})
+            })
+        })
 
         <script>
             window.onload = function () {
