@@ -4,23 +4,26 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>iMicro's Mancave</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="./styles.css" />
     </head>
 
     <body>
-        <a href="https://discord.com/api/oauth2/authorize?client_id=792132143483715654&redirect_uri=http%3A%2F%2Flocalhost%3A3000&response_type=code&scope=identify" 
-        class="button"><span></span>login with discord</a>
+        <a
+            href="https://discord.com/api/oauth2/authorize?client_id=792132143483715654&redirect_uri=http%3A%2F%2Flocalhost%3A3000&response_type=code&scope=identify"
+            class="button"
+            ><span></span>login with discord</a
+        >
 
         <p id="welcome_txt"></p>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <script>
-            $(document).ready((e) => {
-                $('.button').on('mouseenter', (e) => {
+            $(document).ready(e => {
+                $('.button').on('mouseenter', e => {
                     x = e.pageX - $(this).offset().left;
                     y = e.pageY - $(this).offset().top;
                     $(this).find('span').css({ top: y, left: x });
                 });
-                $('.button').on('mouseout', (e) => {
+                $('.button').on('mouseout', e => {
                     x = e.pageX - $(this).offset().left;
                     y = e.pageY - $(this).offset().top;
                     $(this).find('span').css({ top: y, left: x });
