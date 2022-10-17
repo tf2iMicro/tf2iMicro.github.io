@@ -17,13 +17,13 @@
         <p id="welcome_txt"></p>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <script>
-            $(document).ready(e => {
-                $('.button').on('mouseenter', e => {
+            $(document).ready(function (e) {
+                $('.button').on('mouseenter', function(e) {
                     x = e.pageX - $(this).offset().left;
                     y = e.pageY - $(this).offset().top;
                     $(this).find('span').css({ top: y, left: x });
                 });
-                $('.button').on('mouseout', e => {
+                $('.button').on('mouseout', function(e) {
                     x = e.pageX - $(this).offset().left;
                     y = e.pageY - $(this).offset().top;
                     $(this).find('span').css({ top: y, left: x });
