@@ -4,18 +4,31 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>iMicro's Mancave</title>
-        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label class="logo">Mancave</label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Mods</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Steam</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <section>
         <a
             href="https://discord.com/api/oauth2/authorize?client_id=792132143483715654&redirect_uri=http%3A%2F%2Flocalhost%3A3000&response_type=code&scope=identify"
-            class="button"
-            ><span></span>login with discord</a
-        >
+            class="button"><span></span>login with discord</a>
 
-        <p id="welcome_txt"></p>
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <script>
             $(document).ready(function (e) {
                 $('.button').on('mouseenter', function(e) {
@@ -50,10 +63,11 @@
                             document.getElementById(
                                 'welcome_txt'
                             ).innerText = `An error occured. Please try logging in again. Error Code: ${req.status}`;
-                        }
-                    };
-                }
-            };
-        </script>
+                            }
+                        };
+                    }
+                };
+            </script>
+        </section>
     </body>
 </html>
