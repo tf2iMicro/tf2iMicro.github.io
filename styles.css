@@ -28,6 +28,7 @@ label.logo {
 }
 
 nav ul {
+    z-index: 2;
     float: right;
     margin-right: 20px;
 }
@@ -114,8 +115,9 @@ section {
 
 /* Button */
 .button {
+    top: 5vh;
     position: relative;
-    padding: 10px 30px;
+    padding: 1vh 3vw;
     border: 2px solid white;
     margin: 10px;
     display: inline-block;
@@ -124,8 +126,10 @@ section {
     text-transform: uppercase;
     transition: 0.5s;
     overflow: hidden;
+    
 }
 .button span {
+    
     position: absolute;
     display: block;
     width: 0px;
@@ -143,4 +147,23 @@ section {
 }
 .button:hover {
     color:#111;
+}
+
+
+/* Makes everything within the section with class ="flexBox" align in the center */
+.flexBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Designing logo-picture */
+.logoPic{
+    width: 17%;
+    height: auto;
+    border-radius: 50%;
+    
+    box-shadow: 0 0 5vw 3vw black;
+    
 }
