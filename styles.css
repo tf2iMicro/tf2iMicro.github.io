@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-    background: #2D3E51;
+    background: #191818;
     height: 80px;
     width: 100%;
 }
@@ -48,7 +48,8 @@ nav ul li a {
 }
 
 a.active,a:hover {
-    background-color: #18BD93;
+    background-color: #b6bffb;
+    color: #191818;
     transform: 0.5s;
 }
 
