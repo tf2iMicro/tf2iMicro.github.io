@@ -1,4 +1,5 @@
 Current design:
 [Click me to open pages](https://tf2imicro.github.io/)
-Inspiration:
+<br>Inspiration:
 [Click me](https://haru.im/)
+</br>
