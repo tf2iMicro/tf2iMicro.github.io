@@ -57,9 +57,6 @@ body, html{
 .areaTwo>div:hover{
     background-position: right;
 }
-
-
-
 .intro{
     display: flex;
     justify-content: center;
@@ -97,20 +94,21 @@ body, html{
 }
 .section{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding:0;
     background-color: #424549;
 }
 .otherArea{
     width: 70%;
-    height:100%;
-    padding:40px
+    height:90vh;
+    padding:40px;
 }
 .bulletPoint{
     position:sticky;
-    color:var(--txt-color);
+    top:12vh;
+    padding:2vw;
     font-size: xx-large;
+    color:var(--txt-color);
 }
 
 .mainContent{
