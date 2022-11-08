@@ -126,7 +126,7 @@ body, html{
     position:sticky;
     top:12vh;
     padding:2vw;
-    font-size: 5vw;
+    font-size:4vw;
     color:var(--txt-color);
 }
 .gradientText{
@@ -143,7 +143,6 @@ body, html{
         -webkit-text-fill-color: transparent;
     }
 }
-
 .mainContent{
     height: 300vh;
     background-color:#424549 ;
