@@ -99,7 +99,7 @@ body, html{
     background-color: #424549;
 }
 .otherArea{
-    width: 70%;
+    width: 40%;
     height:90vh;
     padding:40px;
 }
@@ -118,8 +118,9 @@ body, html{
 
 .discordArea{
     
-                                                
-    width: 30%;
+    border-radius: 25px;                            
+    width: 60%;
+    margin: 10%;
     height: 100vh;
     background-color: #36393e;
     
