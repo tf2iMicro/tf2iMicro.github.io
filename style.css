@@ -54,13 +54,13 @@ body, html{
 .navArea1 img{
     border-radius: 50%;
 }
-.areaTwo{
+.navArea2{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.areaTwo>div{
+.navArea2>div{
     border-radius: 5px;
     
     margin: 20px;
@@ -73,8 +73,9 @@ body, html{
     transition-timing-function:ease-in-out;
     color:var(--txt-color);
 }
-.areaTwo>div:hover{
+.navArea2>div:hover{
     background-position: 100%;
+    cursor: pointer;
 }
 .intro{
     display: flex;
