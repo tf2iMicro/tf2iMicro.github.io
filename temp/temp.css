@@ -23,6 +23,7 @@ body, html{
     display: grid;
     grid-template-columns: 2fr 1fr;
     backdrop-filter:blur(5px);
+    z-index:10;
 }
 .areaOne{
     display: flex;
@@ -101,7 +102,16 @@ body, html{
     padding:0;
     background-color: #424549;
 }
-.otherArea{width: 70%;}
+.otherArea{
+    width: 70%;
+    height:100%;
+    padding:40px
+}
+.bulletPoint{
+    position:sticky;
+    color:var(--txt-color);
+    font-size: xx-large;
+}
 
 .mainContent{
     height: 300vh;
