@@ -16,8 +16,10 @@
     <a href="https://tf2imicro.github.io/">View website</a>
   </p>
 </div>
+
 ## Inspiration
 Lot of the work we've done has been inspired by these websites:
+<br />
 [haru.im](https://haru.im/) | 
 [betterdiscord.app](https://betterdiscord.app/)
 ## Tools used
