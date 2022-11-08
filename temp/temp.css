@@ -20,6 +20,7 @@ body, html{
     top: 0;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    backdrop-filter:blur(40%);
 }
 .areaOne{
     display: flex;
@@ -32,8 +33,6 @@ body, html{
     width: 7.5%;
     border-radius: 50%;
 }
-
-
 .areaTwo{
     display: flex;
     justify-content: center;
@@ -47,6 +46,18 @@ body, html{
 }
 .areaTwo div:hover{
     background-color: rgba(161, 161, 161, 0.468);
+}
+.areaTwo>div{
+    background:linear-gradient(45deg, red 0%, blue 25%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200px 200px;
+    overflow: hidden;
+    background-position: 0, 0;
+    margin: 20px;
+    transition-duration:1s;
+}
+.areaTwo>div:hover{
+    opacity:50%;
+    background-position: 200px 200px;
 }
 
 
