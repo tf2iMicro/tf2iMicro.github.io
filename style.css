@@ -98,9 +98,9 @@ body, html{
     margin-top:4% ;
 }
 #introduction{
-    background: var(--theme-color);
-    border-radius: 50px;
-    width: 95%;
+    /* background: var(--theme-color);
+    border-radius: 50px; */
+    width: 100%;
     height: 80vh;
 
     display: grid;
@@ -247,6 +247,7 @@ body, html{
 
 .sender img{
     width: 3vw !important;
+    height: auto;
     border-radius: 50% !important;
 }
 
