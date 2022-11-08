@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>iMicro's Mancave</title>
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label class="logo">Mancave</label>
+            <ul>
+                <li><a class="active" href="#" tabindex="1">Home</a></li>
+                <li><a href="#" tabindex="2" >Mods</a></li>
+                <li><a href="#" tabindex="3">Profile</a></li>
+                <li><a href="#" tabindex="4">Steam</a></li>
+                <li><a href="#" tabindex="5">About</a></li>
+            </ul>
+        </nav>
+        <section class="flexBox">
+            <!-- Makes-logoPic -->
+            <img src="img/logo.jpg" alt="Mancave-logo" class="logoPic">
+        <a
+            href="https://discord.com/api/oauth2/authorize?client_id=792132143483715654&redirect_uri=http%3A%2F%2Flocalhost%3A3000&response_type=code&scope=identify"
+            class="button"><span></span>login with discord</a>
+
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function (e) {
+                $('.button').on('mouseenter', function(e) {
+                    x = e.pageX - $(this).offset().left;
+                    y = e.pageY - $(this).offset().top;
+                    $(this).find('span').css({ top: y, left: x });
+                });
+                $('.button').on('mouseout', function(e) {
+                    x = e.pageX - $(this).offset().left;
+                    y = e.pageY - $(this).offset().top;
+                    $(this).find('span').css({ top: y, left: x });
+                });
+            });
+        </script>
+
+        <script>
+            window.onload = () => {
+                if (location.href.indexOf('code') !== -1) {
+                    const code = location.href.substring(location.href.indexOf('code') + 5, location.href.length);
+                    const req = new XMLHttpRequest();
+
+                    req.open('POST', 'http://localhost:3000/user');
+                    req.send(code);
+                    req.onload = () => {
+                        if (req.status === 500) {
+                            document.getElementById(
+                                'welcome_txt'
+                            ).innerText = `There was an error with that. Please try logging in again. Error Code: ${req.status}`;
+                        } else if (req.status === 200) {
+                            document.getElementById('welcome_txt').innerText = `Welcome, ${req.responseText}!`;
+                        } else {
+                            document.getElementById(
+                                'welcome_txt'
+                            ).innerText = `An error occured. Please try logging in again. Error Code: ${req.status}`;
+                            }
+                        };
+                    }
+                };
+            </script>
+        </section>
+    </body>
+</html>

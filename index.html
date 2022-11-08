@@ -1,75 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>iMicro's Mancave</title>
-        <link rel="stylesheet" href="./styles.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <header>
+        <div id="navbar">
+            
+            <!-- LOGO AND PIC START-->
+            <div class="areaOne"><img src="/img/logo.jpg" alt=""><h1>IMICROS MANCAVE</h1></div>
+            <!-- LOGO AND PIC END -->
+            
+            <!-- BUTTONS START -->
+            <div class="areaTwo"> 
+                <div>CMD LIST</div>
+                <div>LINK DISC</div>
+                <div>ABOUT</div>
+                <div>MODS</div>
+            </div>
+            <!-- BUTTONS END -->
+        </div>
+    </header>
+    <!-- NAVBAR END -->
+    
+    
 
-    <body>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa fa-bars"></i>
-            </label>
-            <label class="logo">Mancave</label>
-            <ul>
-                <li><a class="active" href="#" tabindex="1">Home</a></li>
-                <li><a href="#" tabindex="2" >Mods</a></li>
-                <li><a href="#" tabindex="3">Profile</a></li>
-                <li><a href="#" tabindex="4">Steam</a></li>
-                <li><a href="#" tabindex="5">About</a></li>
-            </ul>
-        </nav>
-        <section class="flexBox">
-            <!-- Makes-logoPic -->
-            <img src="img/logo.jpg" alt="Mancave-logo" class="logoPic">
-        <a
-            href="https://discord.com/api/oauth2/authorize?client_id=792132143483715654&redirect_uri=http%3A%2F%2Flocalhost%3A3000&response_type=code&scope=identify"
-            class="button"><span></span>login with discord</a>
+    <main>
+        <section class="intro">
+            <div id="introduction">
 
-            <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <script>
-            $(document).ready(function (e) {
-                $('.button').on('mouseenter', function(e) {
-                    x = e.pageX - $(this).offset().left;
-                    y = e.pageY - $(this).offset().top;
-                    $(this).find('span').css({ top: y, left: x });
-                });
-                $('.button').on('mouseout', function(e) {
-                    x = e.pageX - $(this).offset().left;
-                    y = e.pageY - $(this).offset().top;
-                    $(this).find('span').css({ top: y, left: x });
-                });
-            });
-        </script>
+                <div class="introText">INTROTEKST, KUL INTRO nam nam
 
-        <script>
-            window.onload = () => {
-                if (location.href.indexOf('code') !== -1) {
-                    const code = location.href.substring(location.href.indexOf('code') + 5, location.href.length);
-                    const req = new XMLHttpRequest();
+                    <button>CONNECT DISCORD</button>
+                </div>
+                <div class="introImg"><img src="/img/logo.jpg" alt=""></div>
+                <div class="introStats">STATS N SHIT <h3 id="clock"></h3></div>
 
-                    req.open('POST', 'http://localhost:3000/user');
-                    req.send(code);
-                    req.onload = () => {
-                        if (req.status === 500) {
-                            document.getElementById(
-                                'welcome_txt'
-                            ).innerText = `There was an error with that. Please try logging in again. Error Code: ${req.status}`;
-                        } else if (req.status === 200) {
-                            document.getElementById('welcome_txt').innerText = `Welcome, ${req.responseText}!`;
-                        } else {
-                            document.getElementById(
-                                'welcome_txt'
-                            ).innerText = `An error occured. Please try logging in again. Error Code: ${req.status}`;
-                            }
-                        };
-                    }
-                };
-            </script>
+            </div>
         </section>
-    </body>
+
+        <section class="main">
+            <div class="mainContent">
+
+                <!-- section part of main content -->
+                <div class="section">
+
+                    <!-- Area for text n shit -->
+                    <div class="otherArea"></div>
+
+
+                    <!-- FAKE DISC AREA START -->
+
+            <!--Template for making a message   
+                <div class="discMessage">
+                        <div class="sender">
+                            <img  src="img of user profile" alt=""> 
+                            <h3 class="name of user">name of user</h3></div>
+                        <p>message</p>
+                    </div> 
+                -->
+
+
+                    <div class="discordArea">
+                        
+
+                        <div class="discMessage">
+                            <div class="sender"><img  src="/temp/img/discPFP/jasunk.png" alt=""> <h3 class="jasunk">Jasunk</h3> </div>
+                            <p>Har du gamet tf2?</p>
+                        </div>
+
+                        <div class="discMessage">
+                            <div class="sender"><img  src="/temp/img/discPFP/leo.jpeg" alt=""> <h3 class="leo">Leo</h3> </div>
+                            <p>Ja, bro det ene mappet der e mad nais</p>
+                        </div>
+
+                        <div class="discMessage">
+                            <div class="sender"><img  src="/temp/img/discPFP/jasunk.png" alt=""> <h3 class="jasunk">Jasunk</h3> </div>
+                            <p>bilde? <br> pls uwu</p>
+                        </div>
+                        <div class="discMessage">
+                            <div class="sender"><img  src="/temp/img/discPFP/leo.jpeg" alt=""> <h3 class="leo">Leo</h3> </div>
+                            <p>Ja, se her:</p> <br>
+                            <img  id="discPicOne" class="discImg" src="/img/upward.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <!-- FAKE DISC AREA END -->
+                </div>
+                <div class="section">
+                    <div></div>
+                </div>
+                <div class="section">
+                    <div></div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+    <footer id="section-footer" class="page-selection">
+        <div class="page-selection-inner">
+            <selection id="footer-top">
+                <div class="footer-column">Support</div>
+                <div class="footer-column">Development</div>
+                <div class="footer-column"></div>
+                <div class="footer-column"></div>
+            </selection>
+            <section id="footer-bottom">
+                <div id="footer-copyright-container">
+                    <div class="footer-copyright">
+                        © Mancave
+                        <a class="anchor" target="_blank" href="#"
+                            >Mancave Team</a
+                        >
+                    </div>
+                </div>
+                <div id="footer-social-icons">
+                    <a target="_blank" href="#">Discord</a>
+                    <a target="_blank" href="#">Github</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
 </html>
