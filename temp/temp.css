@@ -2,13 +2,13 @@
     --bg-color:rgba(0, 0, 0, 0.287);
     --theme-color:pink;
     --txt-color:white;
+    --gradient-first:rgba(255, 0, 0, 0.475);
+    --gradient-second:rgba(0, 0, 255, 0.475);
 }
 
 body, html{
     margin: 0;
     padding: 0;
-    
-    
 }
 
 #navbar{
@@ -42,13 +42,17 @@ body, html{
 .areaTwo>div{
     border-radius: 5px;
     margin: 20px;
-    background:linear-gradient(90deg,rgba(255, 255, 255, 0) 40%, red 50%, blue 100%);
+    padding:5px;
+    background:linear-gradient(45deg,rgba(255, 255, 255, 0) 45%, var(--gradient-first) 75%, var(--gradient-second) 100%);
+    background-size: 200px;
     overflow: hidden;
-    background-position: 0px ;
-    transition-duration:1s;
+    background-position: left;
+    transition-duration:.4s;
+    transition-timing-function:ease-in-out;
+    color:var(--txt-color);
 }
 .areaTwo>div:hover{
-    background-position: 200px ;
+    background-position: right;
 }
 
 
