@@ -26,7 +26,7 @@ Lot of the work we've done has been inspired by these websites:
 * [OverlayScrollbars](https://github.com/KingSora/OverlayScrollbars)
 * [SVG Generator](https://www.softr.io/tools/svg-wave-generator)
 ## Developers
-- iMicro
-- Jasunk
-- Eirik
-- fredalex
+[iMicro](https://github.com/tf2iMicro) <br />
+[Jasunk](https://github.com/jasunk) <br />
+[EirikAufSchule](https://github.com/EirikAufSchule) <br />
+[fredalex](https://github.com/fredalex6) <br />
