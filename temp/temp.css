@@ -1,5 +1,5 @@
 :root{
-    --bg-color:gray;
+    --bg-color:rgba(0, 0, 0, 0.287);
     --theme-color:pink;
     --txt-color:white;
 }
@@ -20,7 +20,7 @@ body, html{
     top: 0;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    backdrop-filter:blur(40%);
+    backdrop-filter:blur(5px);
 }
 .areaOne{
     display: flex;
@@ -40,16 +40,15 @@ body, html{
 
 }
 .areaTwo>div{
-    background:linear-gradient(45deg, red 0%, blue 25%, rgba(255, 255, 255, 0) 50%);
-    background-size: 200px 200px;
-    overflow: hidden;
-    background-position: 0, 0;
+    border-radius: 5px;
     margin: 20px;
+    background:linear-gradient(90deg,rgba(255, 255, 255, 0) 40%, red 50%, blue 100%);
+    overflow: hidden;
+    background-position: 0px ;
     transition-duration:1s;
 }
 .areaTwo>div:hover{
-    opacity:50%;
-    background-position: 200px 200px;
+    background-position: 200px ;
 }
 
 
