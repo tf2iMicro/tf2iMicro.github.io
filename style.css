@@ -17,6 +17,9 @@ body, html{
     height: 100vh;
 }
 
+
+
+/* Navbar start */
 #navbar{
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
     padding: 0.2%;
@@ -34,23 +37,22 @@ body, html{
     transition-duration: .5s;
     background: rgba(23, 23, 27, 0.7);
 }
-
 .navbarLogo {
-    height: 40px;
+    height: auto;
+    width: 40px;
 }
 .navbarTitle {
     font-size: 20px;
+    font-weight: bold;
     color: white;
     vertical-align: inherit;
 }
-
 .navArea1{
     display: flex;
-    padding: 1%;
+    padding: 0px 96px;
     align-items: center;
     gap: 2%;
 }
-
 .navArea1 img{
     border-radius: 50%;
 }
@@ -58,8 +60,8 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
 }
-
 .navArea2>div{
     border-radius: 5px;
     
@@ -77,6 +79,11 @@ body, html{
     background-position: 100%;
     cursor: pointer;
 }
+/* Navbar end */
+
+
+
+/* Intro start */
 .intro{
     display: flex;
     justify-content: center;
@@ -102,27 +109,41 @@ body, html{
     align-items: center;
     flex-direction: column;
 }
-.introImg{grid-area: i;}
-.introImg img{width: 70%; height: auto; border-radius: 50%; box-shadow: 0 0 5vw 1vw black;}
-.introStats{grid-area: s;}
-
+.introImg{
+    grid-area: i;
+}
+.introImg img{
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 5vw 1vw black;
+}
+.introStats{
+    grid-area: s;
+}
 #introduction > div{
     padding: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* Intro end */
+
+
+
 .section{
     display: flex;
     justify-content: space-between;
     padding:0;
     background-color: #181818;
 }
+
 .otherArea{
     width: 30%;
     height:90vh;
     padding:40px;
 }
+
 .bulletPoint{
     position:sticky;
     top:12vh;
@@ -130,11 +151,13 @@ body, html{
     font-size:4vw;
     color:var(--txt-color);
 }
+
 .gradientText{
     font-size: inherit;
     background-color: var(--gradient-first);
     font-weight: 900;
 }
+
 @supports (-webkit-background-clip:text) and (-webkit-text-fill-color:transparent){
     .gradientText{
         background: linear-gradient(90deg, var(--gradient-first),var(--gradient-second,var(--gradient-first)));
@@ -144,28 +167,23 @@ body, html{
         -webkit-text-fill-color: transparent;
     }
 }
+
 .mainContent{
     height: 300vh;
     background-color:#424549 ;
 }
 
 .discordArea{
-    
     font-family: 'Whitney', sans-serif;
-    
-    
-
     border-radius: 25px;                            
     width: 60%;
     margin: 10%;
     height: 100vh;
     background-color: #36393e;
-    
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .discMessage{
@@ -178,41 +196,43 @@ body, html{
 
     
 }
+
 .discMessage:hover{
     background-color: #282b30;
 }
-
 
 .sender{
     margin-top: 1vh;
     margin-left: 1vw;
     display: flex;
-    
     align-items: center;
-    
 }
+
 .sender h3{
     font-family: 'Whitney Semibold', sans-serif;
     font-size: 1.25vw;
     margin-top: -1vh;
     margin-left: 1vw;
     font-weight:700;
-    
 }
+
 .jasunk{
     color: yellow !important;
 }
-.leo{color: blanchedalmond;}
+
+.leo{
+    color: blanchedalmond;
+}
 
 .sender img{
     width: 3vw !important;
     border-radius: 50% !important;
 }
+
 .discMessage p{
     font: 0.8vw;
     margin-left: 5vw;
     margin-top: -2.8vh;
-    
 }
 
 .discImg{
@@ -221,8 +241,8 @@ body, html{
     margin-left: 5vw;
     margin-top: -2.8vh;
     transition-duration: 0.3s;
-    
 }
+
 .active{
     transform: scale(0.75,0.75) translate(-125%,-50%);
     position: absolute;
