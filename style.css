@@ -159,7 +159,7 @@ body, html{
 
 .otherArea{
     width: 30%;
-    height:100vh;
+    height:110vh;
     padding:10%;
 }
 
@@ -189,8 +189,9 @@ body, html{
 }
 /* ----- FIKS DENNE JÆVELEN!!! ----- */
 .mainContent{
-    height: 300vh;
-    background-color: blue ;
+    height: 280vh;
+    background-color: black;
+    
 }
 
 .discordArea{
@@ -259,7 +260,7 @@ body, html{
     width: 75%;
     border-radius: 15px;
     margin-left: 5vw;
-    margin-top: -2.8vh;
+    margin-top: -2vh;
     transition-duration: 0.3s;
 }
 
@@ -270,6 +271,7 @@ body, html{
 
 #wave {
     margin-bottom: -26px;
+    
 }
 
 /* Footer start */
