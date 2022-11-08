@@ -1,0 +1,191 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+:root{
+    --bg-color:rgba(0, 0, 0, 0.287);
+    --theme-color:pink;
+    --txt-color:white;
+    --gradient-first:rgba(255, 90, 90, 0.675);
+    --gradient-second:rgba(109, 109, 255, 0.675);
+}
+
+body, html{
+    font-family: Pretendard;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    padding: 0.2%;
+    width: 100%;
+    height: 12vh;
+    background-color: var(--bg-color);
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    backdrop-filter:blur(5px);
+    z-index:10;
+}
+.areaOne{
+    display: flex;
+    padding: 1%;
+    align-items: center;
+    gap: 2%;
+}
+
+.areaOne img{
+    width: 7.5%;
+    border-radius: 50%;
+}
+.areaTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.areaTwo>div{
+    border-radius: 5px;
+    margin: 20px;
+    padding:5px;
+    background:linear-gradient(45deg,rgba(255, 255, 255, 0) 45%, var(--gradient-first) 75%, var(--gradient-second) 100%);
+    background-size: 200px;
+    overflow: hidden;
+    background-position: left;
+    transition-duration:.4s;
+    transition-timing-function:ease-in-out;
+    color:var(--txt-color);
+}
+.areaTwo>div:hover{
+    background-position: right;
+}
+
+
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top:4% ;
+}
+#introduction{
+    background: var(--theme-color);
+    border-radius: 50px;
+    width: 95%;
+    height: 80vh;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-template-areas: "t i "
+                         "s s";
+}
+.introText{grid-area: t; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.introImg{grid-area: i;}
+.introImg img{width: 70%; height: auto; border-radius: 50%; box-shadow: 0 0 5vw 1vw black;}
+.introStats{grid-area: s;}
+
+#introduction > div{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    background-color: #424549;
+}
+.otherArea{
+    width: 70%;
+    height:100%;
+    padding:40px
+}
+.bulletPoint{
+    position:sticky;
+    color:var(--txt-color);
+    font-size: xx-large;
+}
+
+.mainContent{
+    height: 300vh;
+    background-color:#424549 ;
+}
+
+.discordArea{
+    
+                                                
+    width: 30%;
+    height: 100vh;
+    background-color: #36393e;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.discMessage{
+    width: 85%;
+    padding: 1%;
+    
+    margin-left: 2vw;
+    color: white;
+    border-radius: 15px;
+
+    
+}
+.discMessage:hover{
+    background-color: #282b30;
+}
+
+
+.sender{
+    margin-top: 1vh;
+    margin-left: 1vw;
+    display: flex;
+    
+    align-items: center;
+    
+}
+.sender h3{
+    font-size: 1.25vw;
+    margin-top: -1vh;
+    margin-left: 1vw;
+    
+}
+.jasunk{
+    color: yellow !important;
+}
+.leo{color: blanchedalmond;}
+
+.sender img{
+    width: 3vw !important;
+    border-radius: 50% !important;
+}
+.discMessage p{
+    font: 0.8vw;
+    margin-left: 5vw;
+    margin-top: -2.8vh;
+    
+}
+
+.discImg{
+    width: 75%;
+    border-radius: 15px;
+    margin-left: 5vw;
+    margin-top: -2.8vh;
+    transition-duration: 0.3s;
+    
+}
+.active{
+    transform: scale(0.75,0.75) translate(-125%,-50%);
+    position: absolute;
+}
