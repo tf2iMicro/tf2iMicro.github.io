@@ -24,8 +24,11 @@ body, html{
     top: 0;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    -ms-grid-row-align: center;
     backdrop-filter:blur(5px);
     z-index:10;
+    align-items:center;
+    transition-duration: .5s;
 }
 .areaOne{
     display: flex;
