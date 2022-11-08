@@ -2,8 +2,8 @@
     --bg-color:rgba(0, 0, 0, 0.287);
     --theme-color:pink;
     --txt-color:white;
-    --gradient-first:rgba(255, 0, 0, 0.475);
-    --gradient-second:rgba(0, 0, 255, 0.475);
+    --gradient-first:rgba(255, 90, 90, 0.675);
+    --gradient-second:rgba(109, 109, 255, 0.675);
 }
 
 body, html{
