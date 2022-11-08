@@ -1,5 +1,10 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 @import url('https://fonts.cdnfonts.com/css/whitney-2');
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root{
     --bg-color:rgba(0, 0, 0, 0.287);
     --theme-color:#181818;
@@ -15,6 +20,7 @@ body, html{
     padding: 0;
     background: linear-gradient(#181818, #262626);
     height: 100vh;
+    color: white;
 }
 
 
@@ -171,7 +177,7 @@ body, html{
 
 .mainContent{
     height: 300vh;
-    background-color:#424549 ;
+    background-color: blue ;
 }
 
 .discordArea{
@@ -248,3 +254,60 @@ body, html{
     transform: scale(0.75,0.75) translate(-125%,-50%);
     position: absolute;
 }
+
+#wave {
+    margin-bottom: -26px;
+}
+
+/* Footer start */
+.footer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 64px 0;
+    background-color: #22242B;
+    color: white;
+    line-height: 1.5;
+}
+.container {
+    max-width: 1764px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 10%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 300;
+    position: relative;
+}
+.footer-ul{
+    list-style: none;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    color: rgba(255,255,255, 0.4);
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: var(--gradient-second);
+    text-shadow: -2px 2px #181818;
+}
+.copyright{
+    vertical-align: inherit;
+    display: flex;
+    justify-content: center;
+}
+/* Footer end */
