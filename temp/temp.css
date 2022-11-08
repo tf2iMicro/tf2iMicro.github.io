@@ -162,7 +162,6 @@ body, html{
     transition-duration: 0.3s;
     
 }
-
 .active{
     transform: scale(0.75,0.75) translate(-125%,-50%);
     position: absolute;
