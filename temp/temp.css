@@ -38,7 +38,15 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+.areaTwo div{
+    height: 80%;
+    width:20%;
+    background: none;
+    border-radius: 10px;
+}
+.areaTwo div:hover{
+    background-color: rgba(161, 161, 161, 0.468);
 }
 
 
@@ -78,5 +86,80 @@ body, html{
     justify-content: center;
     align-items: center;
 }
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    background-color: #424549;
+}
+.otherArea{width: 70%;}
 
 
+.discordArea{
+    width: 30%;
+    height: 100vh;
+    background-color: #36393e;
+    float: left;
+}
+
+.discMessage{
+    width: 85%;
+    padding: 1%;
+    
+    margin-left: 2vw;
+    color: white;
+    border-radius: 15px;
+
+    
+}
+.discMessage:hover{
+    background-color: #282b30;
+}
+
+
+.sender{
+    margin-top: 1vh;
+    margin-left: 1vw;
+    display: flex;
+    
+    align-items: center;
+    
+}
+.sender h3{
+    font-size: 1.25vw;
+    margin-top: -1vh;
+    margin-left: 1vw;
+    
+}
+.jasunk{
+    color: yellow !important;
+}
+.leo{color: blanchedalmond;}
+
+.sender img{
+    width: 3vw !important;
+    border-radius: 50% !important;
+}
+.discMessage p{
+    font: 0.8vw;
+    margin-left: 5vw;
+    margin-top: -2.8vh;
+    
+}
+
+.discImg{
+    width: 75%;
+    border-radius: 15px;
+    margin-left: 5vw;
+    margin-top: -2.8vh;
+    transition-duration: 0.3s;
+    
+}
+
+.active{
+    transform: scale(0.75,0.75) translate(-125%,-50%);
+    position: absolute;
+
+    
+}
