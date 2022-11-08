@@ -174,7 +174,7 @@ body, html{
         -webkit-text-fill-color: transparent;
     }
 }
-
+/* ----- FIKS DENNE JÆVELEN!!! ----- */
 .mainContent{
     height: 300vh;
     background-color: blue ;
