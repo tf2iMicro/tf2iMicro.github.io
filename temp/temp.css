@@ -1,0 +1,16 @@
+:root{
+    --bg-color:black;
+    --theme-color:temp;
+    --txt-color:temp;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    width: 100%;
+    height: 12vh;
+    background-color: var(--bg-color);
+}
