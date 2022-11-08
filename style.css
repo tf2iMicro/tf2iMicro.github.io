@@ -119,8 +119,8 @@ body, html{
 }
 .otherArea{
     width: 30%;
-    height:90vh;
-    padding:40px;
+    height:100vh;
+    padding:10%;
 }
 .bulletPoint{
     position:sticky;
@@ -139,6 +139,7 @@ body, html{
         background: linear-gradient(90deg, var(--gradient-first),var(--gradient-second,var(--gradient-first)));
         background-size: 150%;
         background-position: 0;
+        background-clip:text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
