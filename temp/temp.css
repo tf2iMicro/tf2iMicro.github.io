@@ -1,16 +1,52 @@
 :root{
-    --bg-color:black;
-    --theme-color:temp;
-    --txt-color:temp;
+    --bg-color:gray;
+    --theme-color:pink;
+    --txt-color:white;
 }
 
 body, html{
     margin: 0;
     padding: 0;
+    
+    
 }
 
 #navbar{
     width: 100%;
     height: 12vh;
     background-color: var(--bg-color);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top:4% ;
+}
+#introduction{
+    background: var(--theme-color);
+    border-radius: 50px;
+    width: 95%;
+    height: 80vh;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 5fr 1fr;
+    grid-template-areas: "t i "
+                         "s s";
+}
+.introText{grid-area: t;}
+.introImg{grid-area: i;}
+.introStats{grid-area: s;}
+
+#introduction > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
