@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 :root{
     --bg-color:rgba(0, 0, 0, 0.287);
     --theme-color:pink;
@@ -7,6 +8,7 @@
 }
 
 body, html{
+    font-family: Pretendard;
     margin: 0;
     padding: 0;
 }
@@ -101,12 +103,23 @@ body, html{
 }
 .otherArea{width: 70%;}
 
+.mainContent{
+    height: 300vh;
+    background-color:#424549 ;
+}
 
 .discordArea{
+    
+                                                
     width: 30%;
     height: 100vh;
     background-color: #36393e;
-    float: left;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .discMessage{
@@ -165,6 +178,4 @@ body, html{
 .active{
     transform: scale(0.75,0.75) translate(-125%,-50%);
     position: absolute;
-
-    
 }
