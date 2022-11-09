@@ -35,7 +35,38 @@ let lm_txt_color="#2B2628"
 let lm_gradient_first="rgba(255, 90, 90, 0.675)"
 let lm_gradient_second="rgba(255, 144, 53, 0.675)"
 
+if (localStorage.getItem("currentMode")==1){
+    darkmodeButton.innerHTML= "<i class='fa-solid fa-moon'></i>"
+    darkmodeButton.style.backgroundColor="white"
+    darkmodeButton.style.color="black"
+    localStorage.setItem("currentMode",1)
+   
 
+    røtter.style.setProperty('--txt-color', lm_txt_color);
+    røtter.style.setProperty('--bg-color', lm_bg_color);
+    røtter.style.setProperty('--theme-color', lm_theme_color);
+    røtter.style.setProperty('--theme-color2', lm_theme_color2);
+    røtter.style.setProperty('--gradient-first', lm_gradient_first);
+    røtter.style.setProperty('--gradient-second', lm_gradient_second);
+
+
+
+
+}else{
+    darkmodeButton.innerHTML= "<i class='fa-solid fa-sun'></i>"
+    darkmodeButton.style.backgroundColor="black"
+    darkmodeButton.style.color="white"
+    localStorage.setItem("currentMode",0)
+   
+
+
+    røtter.style.setProperty('--txt-color', dm_txt_color);
+    røtter.style.setProperty('--bg-color', dm_bg_color);
+    røtter.style.setProperty('--theme-color', dm_theme_color);
+    røtter.style.setProperty('--theme-color2', dm_theme_color2);
+    røtter.style.setProperty('--gradient-first', dm_gradient_first);
+    røtter.style.setProperty('--gradient-second', dm_gradient_second);
+}
 function darkmode(){
     
     if (localStorage.getItem("currentMode")==0){
@@ -72,6 +103,8 @@ function darkmode(){
     }
     
 }
+
+
 
 const commentContainer = document.querySelector('.otherArea');
 const featureComment = document.querySelector('.bulletPoint');
