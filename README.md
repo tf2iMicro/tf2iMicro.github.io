@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="http://dsc.gg/iMicro">
-    <img src="https://raw.githubusercontent.com/tf2iMicro/tf2iMicro.github.io/main/img/logo.jpg" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/tf2iMicro/tf2iMicro.github.io/main/views/img/logo.jpg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">iMicro's Mancave Website</h3>
