@@ -12,6 +12,7 @@
     --txt-color: white;
     --gradient-first: rgba(255, 90, 90, 0.675);
     --gradient-second: rgba(255, 144, 53, 0.675);
+
 }
 
 body,
@@ -22,7 +23,8 @@ html {
     background: linear-gradient(#181818, #262626,var(--theme-color));
     /* background-color: #181818; */
     height: 200vh;
-    color: white;
+    color: var(--txt-color) ;
+    
 }
 
 /* Navbar start */
@@ -122,18 +124,30 @@ html {
     align-items: center;
     flex-direction: column;
 }
+
+.introButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
 .discordButton {
     background-color: var(--gradient-second);
     border: none;
     border-radius: 15px;
-    color: white;
-    padding: 20px 40px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
+    color: var(--txt-color);
+    width: 100%;
+    padding: 1.5vw ;
+    height: 100%;
+    
+    font-size: 1vw;
     font-family: Pretendard;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .introImg {
     grid-area: i;
@@ -159,7 +173,7 @@ html {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    background-color: #181818;
+    background-color: var(--theme-color);
 }
 
 .otherArea {
@@ -184,7 +198,7 @@ html {
 
 .bigText {
     font-size: 36px;
-    color: white;
+    color: var(--txt-color);
 }
 
 .gradientText {
@@ -300,7 +314,7 @@ html {
     margin: 0;
     padding: 64px 0;
     background-color: #22242b;
-    color: white;
+    color: var(--txt-color);
     line-height: 1.5;
 }
 .container {
@@ -317,7 +331,7 @@ html {
 }
 .footer-col h4 {
     font-size: 16px;
-    color: white;
+    color: var(--txt-color);
     margin-bottom: 25px;
     font-weight: 300;
     position: relative;
@@ -352,4 +366,22 @@ iframe {
     width: 100%;
     overflow: hidden;
     border-radius: 15px;
+}
+
+#darkmode{
+    width: 3vw;
+    height: 3vw;
+    position: fixed;
+    background-color: black;
+    z-index: 100;
+    bottom: 2%;
+    left: 1.5%;
+    border-radius: 50%;
+    color: var(--txt-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }

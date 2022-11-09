@@ -2,36 +2,68 @@ let desiredString = "imicro"
 let currentString = ""
 
 document.addEventListener('keydown', function(event) {
-    if(event.keyCode == 73) {
-        /* i */
-        currentString+="i"
+    switch (event.keyCode){
+        case 73:currentString+="i"; break;
+        case 77:currentString+="m"; break;
+        case 67:currentString+="c"; break;
+        case 82:currentString+="r"; break;
+        case 79:currentString+="o"; break;
+        default:currentString=""; break;
+
     }
-    else if(event.keyCode == 77) {
-        /* m */
-        currentString+="m"
-    }
-    else if(event.keyCode == 67) {
-        /* c */
-        currentString+="c"
-    }
-    else if(event.keyCode == 82) {
-        /* r */
-        currentString+="r"
-    }
-    else if(event.keyCode == 79) {
-        /* o */
-        currentString+="o"
-    }
-    else {
-        currentString= ""
-    }
-    
-    if (currentString==desiredString){
-        document.getElementById("navbarTitle").innerHTML = "Hehe, easteregg"
-    }
-    
-    
+    if (currentString==desiredString){document.getElementById("navbarTitle").innerHTML = "Hehe, easteregg"}
+});
+
+let darkmodeButton = document.getElementById("darkmode")
+let mode = 0
+let røtter = document.documentElement
+
+
+let dm_bg_color= "rgba(0, 0, 0, 0.287)"
+let dm_theme_color= "#181818"
+let dm_theme_color2="#262626"
+let dm_txt_color="white"
+let dm_gradient_first="rgba(255, 90, 90, 0.675)"
+let dm_gradient_second="rgba(255, 144, 53, 0.675)"
+
+let lm_bg_color= "#C6D8D3"
+let lm_theme_color= "#F5B7CC"
+let lm_theme_color2="#D81E5B"
+let lm_txt_color="#2B2628"
+let lm_gradient_first="rgba(255, 90, 90, 0.675)"
+let lm_gradient_second="rgba(255, 144, 53, 0.675)"
+
+
+function darkmode(){
+    if (mode==0){
+        darkmodeButton.innerHTML= "<i class='fa-solid fa-moon'></i>"
+        darkmodeButton.style.backgroundColor="white"
+        darkmodeButton.style.color="black"
+        mode=1
+
+        røtter.style.setProperty('--txt-color', lm_txt_color);
+        røtter.style.setProperty('--bg-color', lm_bg_color);
+        røtter.style.setProperty('--theme-color', lm_theme_color);
+        røtter.style.setProperty('--theme-color2', lm_theme_color2);
+        røtter.style.setProperty('--gradient-first', lm_gradient_first);
+        røtter.style.setProperty('--gradient-second', lm_gradient_second);
     
 
-});
+
+
+    }else{
+        darkmodeButton.innerHTML= "<i class='fa-solid fa-sun'></i>"
+        darkmodeButton.style.backgroundColor="black"
+        darkmodeButton.style.color="white"
+        mode=0
+
+        røtter.style.setProperty('--txt-color', dm_txt_color);
+        røtter.style.setProperty('--bg-color', dm_bg_color);
+        røtter.style.setProperty('--theme-color', dm_theme_color);
+        røtter.style.setProperty('--theme-color2', dm_theme_color2);
+        røtter.style.setProperty('--gradient-first', dm_gradient_first);
+        røtter.style.setProperty('--gradient-second', dm_gradient_second);
+    }
+    
+}
 
