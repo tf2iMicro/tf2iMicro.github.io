@@ -1,5 +1,5 @@
-let desiredString = "imicro"
-let currentString = ""
+let desiredString = 'imicro';
+let currentString = '';
 
 document.addEventListener('keydown', function(event) {
     switch (event.keyCode){
@@ -68,12 +68,11 @@ function darkmode(){
     
 }
 
-const commentContainer = document.querySelector(".otherArea");
-const featureComment = document.querySelector(".bulletPoint");
+const commentContainer = document.querySelector('.otherArea');
+const featureComment = document.querySelector('.bulletPoint');
 
-window.onscroll = function(){
+window.onscroll = function () {
     console.log(commentContainer.scrollTop);
     /* if(document.querySelector("body").scrollTop == featureComment.style.padding){
-
     } */
-}
+};
