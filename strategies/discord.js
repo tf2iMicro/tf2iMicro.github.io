@@ -50,7 +50,7 @@ passport.use(
     new Strategy(
         {
             clientID: '792132143483715654',
-            clientSecret: 't5l4rh3Vo5xPA4J20j09NwYIHMIJAiE2',
+            clientSecret: 'yes',
             callbackURL: `http://localhost:${PORT}/auth/discord/redirect`,
             scope: ['identify']
         },
