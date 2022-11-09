@@ -71,25 +71,28 @@ html {
 }
 .navArea2 > div {
     border-radius: 5px;
-
     margin: 20px;
     padding: 0.55vw;
-    background: linear-gradient(
-        45deg,
-        rgba(255, 255, 255, 0) 50%,
-        var(--gradient-first) 75%,
-        var(--gradient-second) 100%
-    );
+
+    background: linear-gradient(45deg,rgba(255, 255, 255, 0) 50%,var(--gradient-first) 75%,var(--gradient-second) 100%);
     background-size: 300%;
     overflow: hidden;
     background-position: 0;
     transition-duration: 0.4s;
     transition-timing-function: ease-in-out;
     color: var(--txt-color);
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .navArea2 > div:hover {
     background-position: 100%;
     cursor: pointer;
+}
+.navArea2 > div> *{
+    padding:10px 5px;
 }
 /* Navbar end */
 
