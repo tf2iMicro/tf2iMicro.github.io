@@ -180,6 +180,11 @@ html {
     font-size: 20px;
 }
 
+.bigText {
+    font-size: 36px;
+    color: white;
+}
+
 .gradientText {
     font-size: inherit;
     background-color: var(--gradient-first);
