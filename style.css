@@ -47,12 +47,14 @@ html {
 .navbarLogo {
     height: auto;
     width: 40px;
+    user-select: none;
 }
 .navbarTitle {
     font-size: 20px;
     font-weight: bold;
     color: white;
     vertical-align: inherit;
+    user-select: none;
 }
 .navArea1 {
     display: flex;
@@ -355,4 +357,7 @@ iframe {
     width: 100%;
     overflow: hidden;
     border-radius: 15px;
+}
+@media screen and (max-width:800px){
+    .navArea2{display:none;}
 }
