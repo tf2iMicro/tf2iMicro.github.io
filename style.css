@@ -19,7 +19,8 @@ html {
     font-family: Pretendard;
     margin: 0;
     padding: 0;
-    background: linear-gradient(#181818, #262626);
+    /* background: linear-gradient(#181818, #262626); */
+    background-color: #181818;
     height: 100vh;
     color: white;
 }
@@ -99,6 +100,7 @@ html {
     align-items: center;
     height: 100vh;
     margin-top: 4%;
+    background-color: var(--theme-color2);
 }
 #introduction {
     /* background: var(--theme-color);
