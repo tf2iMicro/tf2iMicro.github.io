@@ -11,7 +11,7 @@
     A website designed for not only iMicro's discord server, but mainly the discord bot Caveman. Website will be used for using and featuring some of the Caveman functions.
     <br />
     <br />
-    <a href="https://tf2imicro.github.io/">View website</a>
+    <a href="https://tf2imicro.github.io/views/">View website</a>
   </p>
 </div>
 
