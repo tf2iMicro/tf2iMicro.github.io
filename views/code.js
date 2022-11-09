@@ -16,7 +16,8 @@ document.addEventListener('keydown', function(event) {
 
 
 let darkmodeButton = document.getElementById("darkmode")
-let mode = 0
+
+
 let røtter = document.documentElement
 
 
@@ -36,11 +37,13 @@ let lm_gradient_second="rgba(255, 144, 53, 0.675)"
 
 
 function darkmode(){
-    if (mode==0){
+    
+    if (localStorage.getItem("currentMode")==0){
         darkmodeButton.innerHTML= "<i class='fa-solid fa-moon'></i>"
         darkmodeButton.style.backgroundColor="white"
         darkmodeButton.style.color="black"
-        mode=1
+        localStorage.setItem("currentMode",1)
+       
 
         røtter.style.setProperty('--txt-color', lm_txt_color);
         røtter.style.setProperty('--bg-color', lm_bg_color);
@@ -56,7 +59,9 @@ function darkmode(){
         darkmodeButton.innerHTML= "<i class='fa-solid fa-sun'></i>"
         darkmodeButton.style.backgroundColor="black"
         darkmodeButton.style.color="white"
-        mode=0
+        localStorage.setItem("currentMode",0)
+       
+
 
         røtter.style.setProperty('--txt-color', dm_txt_color);
         røtter.style.setProperty('--bg-color', dm_bg_color);
