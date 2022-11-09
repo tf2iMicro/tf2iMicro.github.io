@@ -1,20 +1,21 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css');
 @import url('https://fonts.cdnfonts.com/css/whitney-2');
 * {
     margin: 0;
     padding: 0;
 }
 
-:root{
-    --bg-color:rgba(0, 0, 0, 0.287);
-    --theme-color:#181818;
+:root {
+    --bg-color: rgba(0, 0, 0, 0.287);
+    --theme-color: #181818;
     --theme-color2: #262626;
-    --txt-color:white;
-    --gradient-first:rgba(255, 90, 90, 0.675);
-    --gradient-second:rgba(255, 144, 53, 0.675);
+    --txt-color: white;
+    --gradient-first: rgba(255, 90, 90, 0.675);
+    --gradient-second: rgba(255, 144, 53, 0.675);
 }
 
-body, html{
+body,
+html {
     font-family: Pretendard;
     margin: 0;
     padding: 0;
@@ -23,11 +24,10 @@ body, html{
     color: white;
 }
 
-
-
 /* Navbar start */
-#navbar{
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+#navbar {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
     padding: 0.2%;
     width: 100%;
     height: 64px;
@@ -37,10 +37,10 @@ body, html{
     display: grid;
     grid-template-columns: 2fr 1fr;
     -ms-grid-row-align: center;
-    backdrop-filter:blur(5px);
-    z-index:10;
-    align-content:center;
-    transition-duration: .5s;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    align-content: center;
+    transition-duration: 0.5s;
     background: rgba(23, 23, 27, 0.7);
 }
 .navbarLogo {
@@ -53,51 +53,54 @@ body, html{
     color: white;
     vertical-align: inherit;
 }
-.navArea1{
+.navArea1 {
     display: flex;
     padding: 0px 96px;
     align-items: center;
     gap: 2%;
 }
-.navArea1 img{
+.navArea1 img {
     border-radius: 50%;
 }
-.navArea2{
+.navArea2 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16px;
 }
-.navArea2>div{
+.navArea2 > div {
     border-radius: 5px;
-    
+
     margin: 20px;
-    padding:0.55vw;
-    background:linear-gradient(45deg,rgba(255, 255, 255, 0) 50%, var(--gradient-first) 75%, var(--gradient-second) 100%);
+    padding: 0.55vw;
+    background: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0) 50%,
+        var(--gradient-first) 75%,
+        var(--gradient-second) 100%
+    );
     background-size: 300%;
     overflow: hidden;
     background-position: 0;
-    transition-duration:.4s;
-    transition-timing-function:ease-in-out;
-    color:var(--txt-color);
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    color: var(--txt-color);
 }
-.navArea2>div:hover{
+.navArea2 > div:hover {
     background-position: 100%;
     cursor: pointer;
 }
 /* Navbar end */
 
-
-
 /* Intro start */
-.intro{
+.intro {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-top:4% ;
+    margin-top: 4%;
 }
-#introduction{
+#introduction {
     /* background: var(--theme-color);
     border-radius: 50px; */
     width: 100%;
@@ -106,16 +109,18 @@ body, html{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 5fr 1fr;
-    grid-template-areas: "t i "
-                         "s s";
+    grid-template-areas:
+        't i '
+        's s';
 }
-.introText{grid-area: t; 
+.introText {
+    grid-area: t;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.discordButton{
+.discordButton {
     background-color: var(--gradient-second);
     border: none;
     border-radius: 15px;
@@ -128,19 +133,19 @@ body, html{
     display: flex;
     flex-wrap: wrap;
 }
-.introImg{
+.introImg {
     grid-area: i;
 }
-.introImg img{
+.introImg img {
     width: 70%;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 5vw 1vw black;
 }
-.introStats{
+.introStats {
     grid-area: s;
 }
-#introduction > div{
+#introduction > div {
     padding: 2%;
     display: flex;
     justify-content: center;
@@ -148,55 +153,68 @@ body, html{
 }
 /* Intro end */
 
-
-
-.section{
+.section {
     display: flex;
     justify-content: space-between;
-    padding:0;
+    padding: 0;
     background-color: #181818;
 }
 
-.otherArea{
+.otherArea {
     width: 30%;
-    height:110vh;
-    padding:10%;
+    height: 110vh;
+    padding: 10%;
 }
 
-.bulletPoint{
-    position:sticky;
-    top:12vh;
-    padding:2vw;
-    font-size:4vw;
-    color:var(--txt-color);
+.bulletPoint {
+    position: sticky;
+    top: 12vh;
+    padding: 2vw;
+    font-size: 35px;
+    color: var(--txt-color);
 }
 
-.gradientText{
+.faintTransparent {
+    color: rgba(255, 255, 255, 0.36);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.bigText {
+    font-size: 36px;
+    color: white;
+}
+
+.gradientText {
     font-size: inherit;
     background-color: var(--gradient-first);
     font-weight: 900;
 }
 
-@supports (-webkit-background-clip:text) and (-webkit-text-fill-color:transparent){
-    .gradientText{
-        background: linear-gradient(90deg, var(--gradient-first),var(--gradient-second,var(--gradient-first)));
+@supports (-webkit-background-clip: text) and
+    (-webkit-text-fill-color: transparent) {
+    .gradientText {
+        background: linear-gradient(
+            90deg,
+            var(--gradient-first),
+            var(--gradient-second, var(--gradient-first))
+        );
         background-size: 150%;
         background-position: 0;
-        background-clip:text;
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
-/* ----- FIKS DENNE JÆVELEN!!! ----- */
-.mainContent{
+
+.mainContent {
     height: 280vh;
     background-color: black;
-    
 }
 
-.discordArea{
+.discordArea {
     font-family: 'Whitney', sans-serif;
-    border-radius: 25px;                            
+    border-radius: 25px;
     width: 60%;
     margin: 10%;
     height: 90vh;
@@ -272,7 +290,6 @@ body, html{
  */
 #wave {
     margin-bottom: -26px;
-    
 }
 
 /* Footer start */
@@ -280,7 +297,7 @@ body, html{
     box-sizing: border-box;
     margin: 0;
     padding: 64px 0;
-    background-color: #22242B;
+    background-color: #22242b;
     color: white;
     line-height: 1.5;
 }
@@ -292,46 +309,45 @@ body, html{
     display: flex;
     flex-wrap: wrap;
 }
-.footer-col{
+.footer-col {
     width: 10%;
     padding: 0 15px;
 }
-.footer-col h4{
+.footer-col h4 {
     font-size: 16px;
     color: white;
     margin-bottom: 25px;
     font-weight: 300;
     position: relative;
 }
-.footer-ul{
+.footer-ul {
     list-style: none;
 }
-.footer-col ul li:not(:last-child){
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
-.footer-col ul li a{
+.footer-col ul li a {
     font-size: 16px;
-    color: rgba(255,255,255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
     text-decoration: none;
     font-weight: 500;
     display: block;
     transition: all 0.3s ease;
 }
-.footer-col ul li a:hover{
+.footer-col ul li a:hover {
     color: var(--gradient-second);
     text-shadow: -2px 2px #181818;
 }
-.copyright{
+.copyright {
     vertical-align: inherit;
     display: flex;
     justify-content: center;
 }
 /* Footer end */
 
-iframe{
+iframe {
     height: 90vh;
     width: 100%;
     overflow: hidden;
     border-radius: 15px;
-
 }
