@@ -199,14 +199,14 @@ body, html{
     border-radius: 25px;                            
     width: 60%;
     margin: 10%;
-    height: 100vh;
+    height: 90vh;
     background-color: #36393e;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-
+/* 
 .discMessage{
     width: 85%;
     padding: 1%;
@@ -269,7 +269,7 @@ body, html{
     transform: scale(0.75,0.75) translate(-125%,-50%);
     position: absolute;
 }
-
+ */
 #wave {
     margin-bottom: -26px;
     
@@ -327,3 +327,11 @@ body, html{
     justify-content: center;
 }
 /* Footer end */
+
+iframe{
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
