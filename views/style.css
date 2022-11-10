@@ -7,31 +7,40 @@
 
 :root {
     --bg-color: rgba(0, 0, 0, 0.287);
-    --theme-color: #181818;
-    --theme-color2: #262626;
+    --theme-color: #262626;
+    --theme-color2: #181818;
     --txt-color: white;
     --gradient-first: rgba(255, 90, 90, 0.675);
     --gradient-second: rgba(255, 144, 53, 0.675);
-    
+    --footer-color: #22242b;
+    --test-color: red;
+}
+::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: #a53e74;
+}
 
+::selection {
+    color: white;
+    background: rgba(255, 90, 90, 0.675);
 }
 
 body,
 html {
-    
     font-family: Pretendard;
     margin: 0;
     padding: 0;
-    background: linear-gradient(var(--theme-color2),var(--theme-color));
+    background: linear-gradient(var(--theme-color2), var(--theme-color));
     /* background-color: #181818; */
     height: 100vh;
-    color: var(--txt-color) ;
-    
+    color: var(--txt-color);
 }
 
 /* Navbar start */
 #navbar {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
     padding: 0.2%;
     width: 100%;
     height: 64px;
@@ -136,12 +145,10 @@ html {
     flex-direction: column;
 }
 
-.introButtons{
+.introButtons {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
 }
 
 .discordButton {
@@ -150,9 +157,9 @@ html {
     border-radius: 15px;
     color: var(--txt-color);
     width: 100%;
-    padding: 1.5vw ;
+    padding: 1.5vw;
     height: 100%;
-    
+
     font-size: 1vw;
     font-family: Pretendard;
     display: flex;
@@ -184,7 +191,7 @@ html {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    background-color: var(--theme-color);
+    background-color: var(--theme-color2);
 }
 
 .otherArea {
@@ -218,9 +225,14 @@ html {
     font-weight: 900;
 }
 
-@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+@supports (-webkit-background-clip: text) and
+    (-webkit-text-fill-color: transparent) {
     .gradientText {
-        background: linear-gradient(90deg, var(--gradient-first), var(--gradient-second, var(--gradient-first)));
+        background: linear-gradient(
+            90deg,
+            var(--gradient-first),
+            var(--gradient-second, var(--gradient-first))
+        );
         background-size: 150%;
         background-position: 0;
         background-clip: text;
@@ -312,7 +324,7 @@ html {
  */
 #wave {
     margin-bottom: -26px;
-    background-color: var(--theme-color);
+    background-color: var(--theme-color2);
 }
 
 /* Footer start */
@@ -320,7 +332,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 64px 0;
-    background-color:var(--theme-color);
+    background-color: var(--footer-color);
     color: var(--txt-color);
     line-height: 1.5;
 }
@@ -375,7 +387,7 @@ iframe {
     border-radius: 15px;
 }
 
-#darkmode{
+#darkmode {
     width: 3vw;
     height: 3vw;
     position: fixed;
@@ -389,10 +401,11 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-@media screen and (max-width:800px){
-    .navArea2{display:none;}
+@media screen and (max-width: 800px) {
+    .navArea2 {
+        display: none;
+    }
 }
 @media screen and (max-width: 800px) {
     .navArea2 {
