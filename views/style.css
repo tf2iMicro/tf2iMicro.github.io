@@ -42,7 +42,6 @@ html {
 #navbar {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    padding: 0.2%;
     width: 100%;
     height: 64px;
     background-color: var(--bg-color);
@@ -51,7 +50,10 @@ html {
     display: grid;
     grid-template-columns: 2fr 1fr;
     -ms-grid-row-align: center;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    -ms-backdrop-filter: blur(4px);
     z-index: 10;
     align-content: center;
     transition-duration: 0.5s;
