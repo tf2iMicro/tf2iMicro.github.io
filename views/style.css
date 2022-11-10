@@ -335,7 +335,7 @@ html {
     margin: 0;
     padding: 64px 0;
     background-color: var(--footer-color);
-    color: var(--txt-color);
+    color: white;
     line-height: 1.5;
 }
 .container {
@@ -352,7 +352,7 @@ html {
 }
 .footer-col h4 {
     font-size: 16px;
-    color: var(--txt-color);
+    color: white;
     margin-bottom: 25px;
     font-weight: 300;
     position: relative;
