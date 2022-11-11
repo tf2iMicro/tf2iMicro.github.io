@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="http://dsc.gg/iMicro">
-    <img src="https://raw.githubusercontent.com/tf2iMicro/tf2iMicro.github.io/main/img/logo.jpg" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/tf2iMicro/tf2iMicro.github.io/main/views/img/logo.jpg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">iMicro's Mancave Website</h3>
@@ -11,7 +11,7 @@
     A website designed for not only iMicro's discord server, but mainly the discord bot Caveman. Website will be used for using and featuring some of the Caveman functions.
     <br />
     <br />
-    <a href="https://tf2imicro.github.io/">View website</a>
+    <a href="https://tf2imicro.github.io/views/">View website</a>
   </p>
 </div>
 
