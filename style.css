@@ -335,15 +335,21 @@ html {
 }
 .footer-col ul li a {
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.4);
     text-decoration: none;
     font-weight: 500;
     display: block;
-    transition: all 0.3s ease;
+    background: linear-gradient(45deg,rgba(255, 255, 255, 0.4) 50%,var(--gradient-first) 60%,var(--gradient-second) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    overflow: hidden;
+    background-position: 0;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
 }
 .footer-col ul li a:hover {
-    color: var(--gradient-second);
-    text-shadow: -2px 2px #181818;
+    background-position: 100%;   
 }
 .copyright {
     vertical-align: inherit;
