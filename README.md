@@ -23,6 +23,7 @@ Lot of the work we've done has been inspired by these websites:
 ## Tools used
 * [OverlayScrollbars](https://github.com/KingSora/OverlayScrollbars)
 * [SVG Generator](https://www.softr.io/tools/svg-wave-generator)
+* [Font Awesome](https://fontawesome.com/)
 ## Developers
 [iMicro](https://github.com/tf2iMicro) <br />
 [Jasunk](https://github.com/jasunk) <br />
