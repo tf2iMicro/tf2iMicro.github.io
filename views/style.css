@@ -244,10 +244,10 @@ html {
     padding-inline-start: 1rem;
     -webkit-padding-end: 1rem;
     padding-inline-end: 1rem;
-    background: var(--gradient-second);
+    background: rgba(255, 144, 53, 0.8);
 }
 .discordButton:hover {
-    background: rgba(255, 144, 53, 0.8);
+    background: var(--gradient-second);
     cursor: pointer;
     color: transparent;
 }
@@ -539,8 +539,8 @@ iframe {
 }
 
 #darkmode {
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 3.5vw;
+    height: 3.5vw;
     position: fixed;
     background-color: black;
     z-index: 100;
