@@ -19,7 +19,8 @@
 Lot of the work we've done has been inspired by these websites:
 <br />
 [haru.im](https://haru.im/) | 
-[betterdiscord.app](https://betterdiscord.app/)
+[betterdiscord.app](https://betterdiscord.app/) |
+[nibby.dev](https://nibby.dev/)
 ## Tools used
 * [OverlayScrollbars](https://github.com/KingSora/OverlayScrollbars)
 * [SVG Generator](https://www.softr.io/tools/svg-wave-generator)
